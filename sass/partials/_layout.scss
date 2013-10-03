@@ -1,0 +1,297 @@
+$body:		rgb(250, 250, 250);
+
+
+.body
+{
+	background: $body;
+}
+
+
+/***********************************************************************************/
+/* Header */
+$header:     rgba(235, 235, 235, 0.9);
+$user:       #e67e22;
+$user-color: #fefefe;
+$logo:       #e67e22;
+$logo-color: #fefefe;
+
+.header
+{
+	width: 100%;
+	position: fixed;
+	padding: 13px;
+	height: 24px;
+	background: $header;
+
+	z-index: 10;
+}
+
+#logo
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 50px;
+	padding: 15px 20px;
+	@include box-sizing(border-box);
+
+	background: $logo;
+	color: $logo-color;
+
+	.h2
+	{
+		display: inline-block;
+	}
+}
+
+.slogan
+{
+	float: right;
+}
+
+.user
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background: $user;
+	color: $user-color;
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($user, 5%);
+	}
+}
+
+.profil-name
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+.profil-picture
+{
+	display: inline-block;
+	height: 50px;
+	vertical-align: middle;
+}
+
+
+
+/***********************************************************************************/
+/* Nav */
+$button:        $header;
+$button-color:  inherit;
+$nav:	        $header;
+$nav-color:     inherit;
+$menu-color: 	inherit;
+
+.button-menu
+{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 200px;
+	height: 50px;
+	padding: 15px 20px;
+	@include box-sizing(border-box);
+	z-index: 2;
+
+	font-size: 1.2em;
+	background: $button;
+	color: $button-color;
+	cursor: pointer;
+
+	i:before
+	{
+		float: right;
+	}
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button, 5%);
+	}
+}
+
+#nav
+{
+	position: fixed;
+	top: 100px;
+	height: 100%;
+	width: 200px;
+	background: $nav;
+	color: $nav-color;
+	z-index: 1;
+	
+	@include transition(all ease 0.3s);
+}
+
+#nav-closed
+{
+	position: fixed;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 200px;
+	background: $nav;
+	color: $nav-color;
+	z-index: 1;
+
+	@include transition(all ease 0.3s);
+}
+
+#menu
+{
+	position: fixed;
+	top: 100px;
+	width: 200px;
+	color: $menu-color;
+	@include pie-clearfix;
+	cursor: pointer;
+
+	@include transition(all ease 0.3s);
+}
+
+#menu-closed
+{
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 200px;
+	color: $menu-color;
+	@include pie-clearfix;
+	cursor: pointer;
+
+	@include transition(all ease 0.3s);
+}
+
+.li-menu
+{
+	display: inline-block;
+	width: 100%;
+	padding: 13px;
+	float: left;
+	@include box-sizing(border-box);
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button, 5%);
+	}
+}
+
+
+
+/***********************************************************************************/
+/* Section */
+$article:		rgba(250, 250, 250, 0);
+$person: 		#cdf1e2;
+$away: 			#ffa9a9;
+$late: 			#ffc75f;
+
+.section
+{
+	width: 100%;
+	padding: 90px 10% 20px 10%;
+
+	@include box-sizing(border-box);
+}
+
+.article
+{
+	margin: 40px auto 60px auto;
+	background: $article;
+	max-width: 800px;
+}
+
+.section-title
+{
+	margin: 40px;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.search
+{
+	display: block;
+	margin: 0 0 10px 15px;
+	width: 100%;
+
+	@include box-sizing(border-box);
+
+	label
+	{
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+
+	#search
+	{
+		width: 170px;
+		display: inline-block;
+	}
+}
+
+.hour
+{
+		display: block;
+	margin: 0 0 10px 15px;
+	width: 100%;
+
+	@include box-sizing(border-box);
+
+	label
+	{
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+
+	#hour
+	{
+		display: inline-block;
+	}
+}
+
+.liste-eleves
+{
+	@include box-sizing(border-box);
+}
+
+.person
+{
+	display: inline-block;
+	width: 15%;
+	@include box-sizing(border-box);
+	padding: 8px 8px 0 8px;
+	margin: 2.1%;
+	cursor: pointer;
+
+	background: $person;
+}
+
+.away
+{
+	background: $away;
+}
+
+.late
+{
+	background: $late;
+}
+
+.eleve-img
+{
+	max-width: 95%;
+	display: block;
+	margin: auto;
+}
+
+.name
+{
+	margin: 2px auto;
+	display: block;
+	text-align: center;
+	padding: 7px;
+}
