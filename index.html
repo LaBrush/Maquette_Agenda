@@ -52,77 +52,17 @@
 		</article>
 
 		<article class="article">
-			<table class="hour">
-				<tr>
-					<th></th>
-				</tr>
-				<tr>
-					<td>8h</td>
-				</tr>
-				<tr>
-					<td class="bordered">8h55</td>
-				</tr>
-				<tr>
-					<td>9h</td>
-				</tr>
-				<tr>
-					<td class="bordered">9h50</td>
-				</tr>
-				<tr>
-					<td>10h05</td>
-				</tr>
-				<tr>
-					<td class="bordered">10h55</td>
-				</tr>
-				<tr>
-					<td>11h</td>
-				</tr>
-				<tr>
-					<td class="bordered">11h55</td>
-				</tr>
-				<tr>
-					<td>12h</td>
-				</tr>
-				<tr>
-					<td class="bordered">13h</td>
-				</tr>
-				<tr>
-					<td class="bordered"></td>
-				</tr>
-				<tr>
-					<td>13h30</td>
-				</tr>
-				<tr>
-					<td class="bordered">14h25</td>
-				</tr>
-				<tr>
-					<td>14h30</td>
-				</tr>
-				<tr>
-					<td class="bordered">15h20</td>
-				</tr>
-				<tr>
-					<td>15h30</td>
-				</tr>
-				<tr>
-					<td class="bordered">16h20</td>
-				</tr>
-				<tr>
-					<td>16h25</td>
-				</tr>
-				<tr>
-					<td class="bordered last">17h20</td>
-				</tr>
-			</table>
 			<table class="edt">
 				<tr>
+					<td class="hour bottom-solid"></td>
 					<th>Lundi</th>
 					<th>Mardi</th>
 					<th>Mercredi</th>
 					<th>Jeudi</th>
 					<th>Vendredi</th>
 				</tr>
-				<tr>
+				<tr id="8h">
+					<td class="hour">8h</td>
 					<td rowspan="4" class="cour">
 						<span class="info-cours">MATHS</span>
 						<span class="info-cours"><em>Mme Perrier</em></span>
@@ -149,18 +89,30 @@
 						<span class="info-cours">1SI1</span>
 					</td>
 				</tr>
-				<tr class="bottom-dashed">
+				<tr id="8h30" class="bottom-dashed">
+					<td class="hour bottom-solid">8h55</td>
 					<td></td>
 				</tr>
-				<tr>
-					<td></td>
-					<td></td>
+				<tr id="9h">
+					<td class="hour">9h</td>
+					<td rowspan="2" class="cour">
+						<span class="info-cours">HISTOIRE GEO</span>
+						<span class="info-cours"><em>Mme Rochas</em></span>
+						<span class="info-cours">D110</span>
+						<span class="info-cours">1MATHS-A</span>
+					</td>
+					<td rowspan="2" class="cour">
+						<span class="info-cours">FRANCAIS</span>
+						<span class="info-cours"><em>M Damier</em></span>
+						<span class="info-cours">C102</span>
+						<span class="info-cours">1ES4-SI1</span>
+					</td>
 				</tr>
-				<tr class="bottom-dashed">
-					<td></td>
-					<td></td>
+				<tr id="9h30" class="bottom-dashed">
+					<td class="hour bottom-solid">9h50</td>
 				</tr>
-				<tr>
+				<tr id="10h">
+					<td class="hour">10h05</td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">ESPAGNOL LV2</span>
 						<span class="info-cours"><em>Mme Yol</em></span>
@@ -173,8 +125,18 @@
 						<span class="info-cours">C108</span>
 						<span class="info-cours">1ANGL1-3</span>
 					</td>
-					<td></td>
-					<td></td>
+					<td rowspan="4" class="cour">
+						<span class="info-cours">FRANCAIS</span>
+						<span class="info-cours"><em>M Damier</em></span>
+						<span class="info-cours">D002</span>
+						<span class="info-cours">1ES4-SI1</span>
+					</td>
+					<td rowspan="2" class="cour">
+						<span class="info-cours">SCIENCES INGENIEUR</span>
+						<span class="info-cours"><em>M Anice</em></span>
+						<span class="info-cours">C005</span>
+						<span class="info-cours">1MATHS-A</span>
+					</td>
 					<td rowspan="4" class="cour">
 						<span class="info-cours">SCIENCES INGENIEUR</span>
 						<span class="info-cours"><em>M Seguillon</em></span>
@@ -182,11 +144,11 @@
 						<span class="info-cours">1SI1</span>
 					</td>
 				</tr>
-				<tr class="bottom-dashed">
-					<td></td>
-					<td></td>
+				<tr id="10h30" class="bottom-dashed">
+					<td class="hour bottom-solid">10h55</td>
 				</tr>
-				<tr>
+				<tr id="11h">
+					<td class="hour">11h</td>
 					<td></td>
 					<td rowspan="3" class="cour">
 						<span class="info-cours">PHYSIQUE-CHIMIE</span>
@@ -194,38 +156,41 @@
 						<span class="info-cours">D110</span>
 						<span class="info-cours">1MATHS-A</span>
 					</td>
-					<td></td>
-					<td rowspan="2" class="cour">
+					<td rowspan="2" class="cour-annule">
 						<span class="info-cours">ESPAGNOL LV2</span>
 						<span class="info-cours"><em>Mme Yol</em></span>
 						<span class="info-cours">C106</span>
 						<span class="info-cours">ESP2</span>
 				</tr>
-				<tr class="bottom-dashed">
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+				<tr id="11h30" class="bottom-dashed">
+					<td class="hour bottom-solid">11h55</td>
 					<td></td>
 				</tr>
-				<tr class="bottom-dashed">
-					<td></td>
+				<tr id="12h">
+					<td class="hour">12h</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 				</tr>
-				<tr class="bottom-dashed">
+				<tr id="12h30" class="bottom-dashed">
+					<td class="hour bottom-solid">13h</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr id="13h" class="bottom-dashed">
+					<td class="bottom-solid"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr id="13h30">
+					<td class="hour">13h30</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -237,27 +202,34 @@
 						<span class="info-cours">1SI1</span>
 					</td>
 				</tr>
-				<tr class="bottom-dashed">
+				<tr id="14h" class="bottom-dashed">
+					<td class="hour bottom-solid">14h25</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr id="14h30">
+					<td class="hour">14h30</td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">FRANCAIS</span>
-						<span class="info-cours"><em>M DAMIER</em></span>
+						<span class="info-cours"><em>M Damier</em></span>
 						<span class="info-cours">D004</span>
-						<span class="info-cours">1SI1</span>
+						<span class="info-cours">1ES4-SI1</span>
 					</td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">ACC. PERSO</span>
-						<span class="info-cours"><em>Mme SAUVAGEOT LACHENAL</em></span>
+						<span class="info-cours"><em>Mme Sauvageot Lachenal</em></span>
 						<span class="info-cours">D107</span>
 						<span class="info-cours">SI-AP1</span>
 					</td>
 					<td></td>
-					<td></td>
+					<td rowspan="2" class="cour">
+						<span class="info-cours">ANGLAIS LV1</span>
+						<span class="info-cours"><em>Mme Brans</em></span>
+						<span class="info-cours">C1080</span>
+						<span class="info-cours">1ANGL1-3</span>
+					</td>
 					<td rowspan="3" class="cour">
 						<span class="info-cours">PHYSIQUE-CHIMIE</span>
 						<span class="info-cours"><em>Mme Parmentier</em></span>
@@ -265,11 +237,13 @@
 						<span class="info-cours">1MATHS-A</span>
 					</td>
 				</tr>
-				<tr class="bottom-dashed">
+				<tr id="15h" class="bottom-dashed">
+					<td class="hour bottom-solid">15h20</td>
 					<td></td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr id="15h30">
+					<td class="hour">15h30</td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">SCIENCES INGENIEUR</span>
 						<span class="info-cours"><em>M Seguillon</em></span>
@@ -283,21 +257,26 @@
 						<span class="info-cours">SI-TPE2</span>
 					</td>
 					<td></td>
+					<td rowspan="4" class="cour-annule">
+						<span class="info-cours">HISTOIRE GEO</span>
+						<span class="info-cours"><em>Mme Rochas</em></span>
+						<span class="info-cours">D110</span>
+						<span class="info-cours">1MATHS-A</span>
+					</td>
+				</tr>
+				<tr id="16h" class="bottom-dashed">
+					<td class="hour bottom-solid">16h20</td>
+					<td></td>
 					<td></td>
 				</tr>
-				<tr class="bottom-dashed">
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
+				<tr id="16h30">
+					<td class="hour">16h25</td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">FRANCAIS</span>
-						<span class="info-cours"><em>M DAMIER</em></span>
+						<span class="info-cours"><em>M Damier</em></span>
 						<span class="info-cours">D004</span>
 						<span class="info-cours">1SI1 - Gr:A</span>
 					</td>
-					<td></td>
 					<td></td>
 					<td rowspan="2" class="cour">
 						<span class="info-cours">MATHS</span>
@@ -306,8 +285,8 @@
 						<span class="info-cours">1MATHS-A</span>
 					</td>
 				</tr>
-				<tr>
-					<td></td>
+				<tr id="17h">
+					<td class="hour bottom-solid">17h20</td>
 					<td></td>
 				</tr>
 			</table>
