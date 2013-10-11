@@ -1,61 +1,19 @@
 /* Menu */
-$accueil: 	darken($header, 10%);;
-$notes: 	#2ccc6f;
-$devoirs: 	darken(#2ccc6f, 5%);
-$cours: 	darken(#2ccc6f, 10%);
-$agenda: 	#e94c3d;
-$absences: 	darken(#e94c3d, 5%);
-$vie-lyceenne: darken(#e94c3d, 10%);
+$accueil: 		#e67e22;
+$work-table: 	#c8d92f;
+$notes: 		#5bacad;
+$agenda: 		#2ccc6f;
+$absences: 		#d0384c;
+$vie-lyceenne: 	#9e66a2;
 
 .accueil {border-left: 4px solid $accueil;}
+.work-table {border-left: 4px solid $work-table;}
+.cours {border-left: 4px solid $agenda;}
+.devoirs {border-left: 4px solid $agenda;}
 .notes {border-left: 4px solid $notes;}
-.devoirs {border-left: 4px solid $devoirs;}
-.cours {border-left: 4px solid $cours;}
 .agenda {border-left: 4px solid $agenda;}
 .absences {border-left: 4px solid $absences;}
 .vie-lyceenne {border-left: 4px solid $vie-lyceenne;}
-
-
-/**************************************************************************/
-/* Buttons */
-$button-text: 	#fefefe;
-$show-aside: 	#1a736f;
-
-@mixin button
-{
-	border: none;
-	margin: 0;
-	@include border-radius(2px);
-	padding: 4px 10px;
-	color: $button-text;
-	font-size: 0.8em;
-	cursor: pointer;
-}
-
-@mixin show-aside
-{
-	@include button;
-	font-size: 1.2em;
-	@include border-radius(0);
-	background: $show-aside;
-	padding: 0 25px;
-
-	&:hover, &:focus, &:active
-	{
-		background: darken($show-aside, 5%);
-	}
-}
-
-#show-aside-open
-{
-	@include show-aside;
-}
-
-#show-aside-closed
-{
-	@include show-aside;
-}
-
 
 /*********************************************************************/
 /* Inputs */
