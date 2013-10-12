@@ -222,7 +222,8 @@ $cour-ajoute: 	#a7fdab;
 		border-right: 1px $edt-border solid;
 		text-align: center;
 		height: 21px;
-		font-size: 0.55em;
+		padding: 3px;
+		font-size: 0.6em;
 		line-height: 1.3em;
 	}
 
@@ -251,11 +252,6 @@ $cour-ajoute: 	#a7fdab;
 		text-align: center;
 		height: 21px;
 		font-size: 0.7em;
-	}
-	
-	.last
-	{
-		height: 21px;
 	}
 }
 
